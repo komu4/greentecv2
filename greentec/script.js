@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   /* ---------- 3. Desktop dropdown menus: click / tap / keyboard ---------- */
   const dropdownParents = Array.from(
-    document.querySelectorAll(".nav-menu > li")
+    document.querySelectorAll(".nav-menu > li"),
   ).filter((li) => li.querySelector(":scope > .dropdown-menu"));
 
   dropdownParents.forEach((li) => {
@@ -67,7 +67,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
       if (!li.classList.contains("dropdown-open")) {
         e.preventDefault();
-        dropdownParents.forEach((other) => other.classList.remove("dropdown-open"));
+        dropdownParents.forEach((other) =>
+          other.classList.remove("dropdown-open"),
+        );
         li.classList.add("dropdown-open");
       }
       // Second tap on an already-open trigger follows the link as normal.
@@ -89,7 +91,8 @@ document.addEventListener("DOMContentLoaded", () => {
       } catch (err) {
         return;
       }
-      const currentPath = window.location.pathname.split("/").pop() || "index.html";
+      const currentPath =
+        window.location.pathname.split("/").pop() || "index.html";
       const linkPath = url.pathname.split("/").pop() || "index.html";
       const isSamePage = linkPath === currentPath;
 
@@ -100,7 +103,10 @@ document.addEventListener("DOMContentLoaded", () => {
         e.preventDefault();
         const navHeight = navbar ? navbar.offsetHeight : 0;
         const top =
-          target.getBoundingClientRect().top + window.pageYOffset - navHeight - 8;
+          target.getBoundingClientRect().top +
+          window.pageYOffset -
+          navHeight -
+          8;
         window.scrollTo({ top, behavior: "smooth" });
         hamburger?.classList.remove("open");
         mobileMenu?.classList.remove("open");
@@ -143,7 +149,7 @@ document.addEventListener("DOMContentLoaded", () => {
           }
         });
       },
-      { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
+      { threshold: 0.12, rootMargin: "0px 0px -40px 0px" },
     );
     revealEls.forEach((el) => io.observe(el));
   }
