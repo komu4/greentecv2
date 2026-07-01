@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/GREENTEC BLUE GREEN.png">
+    <title>Gallery | Greentec Energy</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;700&family=Outfit:wght@200;400;600&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2c173cbe17.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="greentec.css">
+    <link rel="stylesheet" href="greentec-gallery.css">
+    <script defer src="greentec.js"></script>
+    <script defer src="greentec-gallery.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <div class="container nav-inner">
+                <a href="greentec.html" class="nav-logo">
+                    <div>
+                        <img src="images/GREENTEC WHITE (2).png" alt="Greentec logo" style="height: 45px;">
+                    </div>
+                </a>
+                <ul class="nav-menu">
+                    <li><a href="greentec.html">Home</a></li>
+                    <li>
+                        <a href="greentec.html#products">Product <span class="dropdown-arrow">▾</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="greentec.html#products">Solar Inverters</a></li>
+                            <li><a href="greentec.html#products">Solar Batteries</a></li>
+                            <li><a href="greentec.html#products">Solar Panels</a></li>
+                            <li><a href="greentec.html#products">Breakers & Switchgears</a></li>
+                            <li><a href="greentec.html#products">Power Tools</a></li>
+                            <li><a href="greentec.html#products">Electrical Cables</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="greentec.html#contact">Services <span class="dropdown-arrow">▾</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="greentec.html#contact">Installation</a></li>
+                            <li><a href="greentec.html#contact">Maintenance</a></li>
+                            <li><a href="greentec.html#contact">Consulting</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="greentec-gallery.html">Project Gallery</a></li>
+                    <li><a href="greentec.html#about">About Us</a></li>
+                    <li><a href="articles.html">Blog</a></li>
+                    <li><a href="#">Furniture</a></li>
+                    <li><a href="contact-greentec.html">Contact Us</a></li>
+                    <li><a href="#">CSR</a></li>
+                </ul>
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"
+                    aria-controls="mobile-menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+            <div class="mobile-menu" id="mobile-menu">
+                <a href="greentec.html">Home</a>
+                <div class="mobile-has-sub">
+                    <button class="mobile-sub-toggle" type="button">Product <span
+                            class="mobile-caret">▾</span></button>
+                    <div class="mobile-submenu">
+                        <a href="greentec.html#products">Solar Inverters</a>
+                        <a href="greentec.html#products">Solar Batteries</a>
+                        <a href="greentec.html#products">Solar Panels</a>
+                        <a href="greentec.html#products">Breakers &amp; Switchgears</a>
+                        <a href="greentec.html#products">Power Tools</a>
+                        <a href="greentec.html#products">Electrical Cables</a>
+                    </div>
+                </div>
+                <div class="mobile-has-sub">
+                    <button class="mobile-sub-toggle" type="button">Services <span
+                            class="mobile-caret">▾</span></button>
+                    <div class="mobile-submenu">
+                        <a href="greentec.html#contact">Installation</a>
+                        <a href="greentec.html#contact">Maintenance</a>
+                        <a href="greentec.html#contact">Consulting</a>
+                    </div>
+                </div>
+                <a href="greentec-gallery.html">Project Gallery</a>
+                <a href="greentec.html#about">About Us</a>
+                <a href="articles.html">Blog</a>
+                <a href="#">Furniture</a>
+                <a href="contact-greentec.html">Contact Us</a>
+                <a href="#">CSR</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="gallery-container">
+            <div class="gallery-inner">
+                <div class="filter-bar">
+                    <button class="filter-btn active" data-filter="all"><i class="fa-solid fa-border-all"></i> All
+                        Products</button>
+                    <button class="filter-btn" data-filter="solar"><i class="fa-solid fa-solar-panel"></i> Solar
+                        Panels</button>
+                    <button class="filter-btn" data-filter="storage"><i class="fa-solid fa-battery-full"></i> Battery
+                        Storage</button>
+                    <button class="filter-btn" data-filter="inverter"><i class="fa-solid fa-bolt"></i>
+                        Inverters</button>
+                    <button class="filter-btn" data-filter="kit"><i class="fa-solid fa-box"></i> Starter Kits</button>
+                </div>
+
+                <div class="results-bar">
+                    <span id="results-count">6 products</span>
+                </div>
+
+                <div class="product-grid" id="product-grid">
+
+                    <div class="gallery-card" data-category="kit" data-img="images/solar-kit.jpg"
+                        data-badge="Best Seller" data-cat="Starter Kit" data-title="Solar Starter Kit"
+                        data-price="&#8358;85,000"
+                        data-desc="A complete entry-level solar setup ideal for small homes and apartments. Includes monocrystalline panels, a pure sine wave inverter, and all mounting hardware for a clean installation."
+                        data-specs='[["Capacity","1.5kWh"],["Panel Type","Monocrystalline"],["Inverter","1kVA Pure Sine"],["Warranty","2 Years"]]'>
+                        <div class="gallery-card-image-wrap">
+                            <div class="gallery-card-img" style="background-image:url('images/solar-kit.jpg');"></div>
+                            <div class="gallery-card-overlay"><a href="contact-greentec.html" class="overlay-quote-btn">Get
+                                    Quote</a>
+                            </div>
+                            <span class="gallery-badge bestseller">Best Seller</span>
+                        </div>
+                        <div class="gallery-card-body">
+                            <span class="gallery-cat">Starter Kit</span>
+                            <h3>Solar Starter Kit</h3>
+                            <p>Complete entry-level solar setup for small homes. Includes panels, inverter and mounting
+                                hardware.</p>
+                            <div class="gallery-card-footer">
+                                <span class="gallery-price">&#8358;85,000</span>
+                                <a href="#" class="gallery-cta"
+                                    onclick="openProductModal(this.closest('.gallery-card')); return false;">View
+                                    Details <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card" data-category="storage" data-img="images/solar-panel_2196335.png"
+                        data-cat="Battery Storage" data-title="Li-ion Storage 5kWh" data-price="&#8358;250,000"
+                        data-desc="High-performance lithium-ion battery storage providing reliable 24/7 power for homes and offices. Smart BMS protection included."
+                        data-specs='[["Capacity","5kWh"],["Chemistry","LiFePO4"],["Cycles","3000+"],["Warranty","3 Years"]]'>
+                        <div class="gallery-card-image-wrap">
+                            <div class="gallery-card-img"
+                                style="background-image:url('images/solar-panel_2196335.png');">
+                            </div>
+                            <div class="gallery-card-overlay"><a href="contact-greentec.html" class="overlay-quote-btn">Get
+                                    Quote</a>
+                            </div>
+                        </div>
+                        <div class="gallery-card-body">
+                            <span class="gallery-cat">Battery Storage</span>
+                            <h3>Li-ion Storage 5kWh</h3>
+                            <p>High-performance lithium battery storage for 24/7 power availability in homes and
+                                offices.
+                            </p>
+                            <div class="gallery-card-footer">
+                                <span class="gallery-price">&#8358;250,000</span>
+                                <a href="#" class="gallery-cta"
+                                    onclick="openProductModal(this.closest('.gallery-card')); return false;">View
+                                    Details <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card" data-category="solar"
+                        data-img="images/SaveClip.App_611656790_18032358659753425_6235661990614392821_n.jpg"
+                        data-badge="New" data-cat="Solar Panel" data-title="Monocrystalline 400W"
+                        data-price="&#8358;120,000"
+                        data-desc="High-efficiency monocrystalline panels with anti-reflective coating and a 25-year performance warranty. Ideal for rooftop installations."
+                        data-specs='[["Power Output","400W"],["Efficiency","21.5%"],["Cell Type","Monocrystalline"],["Warranty","25 Years"]]'>
+                        <div class="gallery-card-image-wrap">
+                            <div class="gallery-card-img"
+                                style="background-image:url('images/SaveClip.App_611656790_18032358659753425_6235661990614392821_n.jpg');">
+                            </div>
+                            <div class="gallery-card-overlay"><a href="contact-greentec.html" class="overlay-quote-btn">Get
+                                    Quote</a>
+                            </div>
+                            <span class="gallery-badge new-badge">New</span>
+                        </div>
+                        <div class="gallery-card-body">
+                            <span class="gallery-cat">Solar Panel</span>
+                            <h3>Monocrystalline 400W</h3>
+                            <p>High-efficiency monocrystalline panels with 25-year performance warranty and
+                                anti-reflective
+                                coating.</p>
+                            <div class="gallery-card-footer">
+                                <span class="gallery-price">&#8358;120,000</span>
+                                <a href="#" class="gallery-cta"
+                                    onclick="openProductModal(this.closest('.gallery-card')); return false;">View
+                                    Details <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card" data-category="inverter">
+                        <div class="gallery-card-image-wrap">
+                            <div class="gallery-card-img"
+                                style="background-image:url('images/SaveClip.App_616418300_18033444413753425_518220412795370762_n.jpg');">
+                            </div>
+                            <div class="gallery-card-overlay"><a href="contact-greentec.html" class="overlay-quote-btn">Get
+                                    Quote</a>
+                            </div>
+                        </div>
+                        <div class="gallery-card-body">
+                            <span class="gallery-cat">Inverter</span>
+                            <h3>Hybrid Inverter 5kVA</h3>
+                            <p>Smart hybrid inverter with grid-tie and off-grid capability. Compatible with lithium and
+                                lead-acid batteries.</p>
+                            <div class="gallery-card-footer">
+                                <span class="gallery-price">&#8358;180,000</span>
+                                <a href="#" class="gallery-cta"
+                                    onclick="openProductModal(this.closest('.gallery-card')); return false;">View
+                                    Details <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card" data-category="storage">
+                        <div class="gallery-card-image-wrap">
+                            <div class="gallery-card-img"
+                                style="background-image:url('images/SaveClip.App_625051165_18034927586753425_2255944884882714345_n.jpg');">
+                            </div>
+                            <div class="gallery-card-overlay"><a href="contact-greentec.html" class="overlay-quote-btn">Get
+                                    Quote</a>
+                            </div>
+                        </div>
+                        <div class="gallery-card-body">
+                            <span class="gallery-cat">Battery Storage</span>
+                            <h3>Li-ion Storage 10kWh</h3>
+                            <p>Industrial-grade lithium battery bank ideal for commercial properties and large
+                                residential
+                                setups.</p>
+                            <div class="gallery-card-footer">
+                                <span class="gallery-price">&#8358;450,000</span>
+                                <a href="#" class="gallery-cta"
+                                    onclick="openProductModal(this.closest('.gallery-card')); return false;">View
+                                    Details <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card" data-category="solar">
+                        <div class="gallery-card-image-wrap">
+                            <div class="gallery-card-img" style="background-image:url('images/solarr.jpg');"></div>
+                            <div class="gallery-card-overlay"><a href="contact-greentec.html" class="overlay-quote-btn">Get
+                                    Quote</a>
+                            </div>
+                        </div>
+                        <div class="gallery-card-body">
+                            <span class="gallery-cat">Solar Panel</span>
+                            <h3>Bifacial Panel 550W</h3>
+                            <p>Dual-sided panels capture reflected light from surfaces below, boosting output by up to
+                                30%.
+                            </p>
+                            <div class="gallery-card-footer">
+                                <span class="gallery-price">&#8358;195,000</span>
+                                <a href="#" class="gallery-cta"
+                                    onclick="openProductModal(this.closest('.gallery-card')); return false;">View
+                                    Details <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="no-results" id="no-results" style="display:none;">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <p>No products in this category yet.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <div class="footer-brand">
+                            <img src="images/GREENTEC WHITE (2).png" alt="" style="height: 40px;">
+                        </div>
+                    </div>
+                    <div class="footer-address">
+                        Ifelodun Plank Market,<br>
+                        18 Demurin Street, Ketu, Lagos 100234<br><br>
+                        <a href="mailto:laraisongreentec@gmail.com">Laraisongreentec@gmail.com</a><br>
+                        <a href="tel:+2348170000804">+234 817 0000 804</a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Navigation</h4>
+                    <ul class="footer-nav">
+                        <li><a href="greentec.html">Home</a></li>
+                        <li><a href="greentec.html#products">Our Products</a></li>
+                        <li><a href="greentec.html#contact">Our Services</a></li>
+                        <li><a href="greentec.html#about">About Us</a></li>
+                        <li><a href="greentec-gallery.html">Project Gallery</a></li>
+                        <li><a href="#">CSR</a></li>
+                        <li><a href="#">Furniture</a></li>
+                        <li><a href="contact-greentec.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Social Media</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <div class="social-icon fb">
+                                <!-- User Icon -->
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                                </svg>
+                            </div>
+                            Facebook
+                        </a>
+                        <a href="#" class="social-link">
+                            <div class="social-icon ig">
+                                <!-- User Icon -->
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="#fff"
+                                        stroke-width="2" />
+                                    <circle cx="12" cy="12" r="4" fill="none" stroke="#fff" stroke-width="2" />
+                                    <circle cx="17.5" cy="6.5" r="1.5" fill="#fff" />
+                                </svg>
+                            </div>
+                            Instagram
+                        </a>
+                        <a href="#" class="social-link">
+                            <div class="social-icon tt">
+                                <!-- User Icon -->
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="#fff"
+                                        d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.32 6.32 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.22 8.22 0 0 0 4.82 1.56V6.79a4.85 4.85 0 0 1-1.05-.1z" />
+                                </svg>
+                            </div>
+                            TikTok
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- PRODUCT DETAIL MODAL -->
+    <div class="product-modal-overlay" id="productModalOverlay" onclick="closeProductModal()">
+        <div class="product-modal" id="productModal" onclick="event.stopPropagation()">
+            <button class="modal-close" onclick="closeProductModal()"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-inner">
+                <div class="modal-image" id="modalImage"></div>
+                <div class="modal-content">
+                    <div id="modalTopBadges"></div>
+                    <span class="modal-category" id="modalCategory"></span>
+                    <h2 id="modalTitle"></h2>
+                    <p class="modal-price" id="modalPrice"></p>
+                    <p class="modal-desc" id="modalDesc"></p>
+                    <div class="modal-specs" id="modalSpecs"></div>
+                    <div class="modal-actions">
+                        <a href="contact-greentec.html" class="cta-btn">Get a Quote</a>
+                        <a href="greentec-gallery.html" class="modal-catalog-link">Back to Catalog</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
