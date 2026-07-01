@@ -1233,6 +1233,18 @@ footer {
 
   #who {
     padding: 60px 0;
+    display: flex;
+  }
+
+  .project-grid {
+    display: block;
+    width: 50%;
+    justify-self: center;
+  }
+
+  .grid-item {
+    gap: 30px;
+    margin-top: 20px;
   }
 
   .who-grid {
